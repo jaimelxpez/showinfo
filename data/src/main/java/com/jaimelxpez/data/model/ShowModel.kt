@@ -22,7 +22,7 @@ data class ShowModel(
     @SerializedName("ended")
     val ended: String?,
     @SerializedName("rating")
-    val rating: Double?,
+    val rating: RatingModel?,
     @SerializedName("image")
     val image: ImageModel?,
     @SerializedName("summary")
@@ -34,4 +34,8 @@ data class ImageModel(
     val medium: String?,
     @SerializedName("original")
     val original: String?
+)
+
+data class RatingModel(
+    val average: Double?
 )

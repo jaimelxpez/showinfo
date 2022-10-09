@@ -13,9 +13,9 @@ fun ShowModel.toDomain(): Show = Show(
     genres = this.genres,
     isEnded = this.status == "Ended",
     averageTime = this.averageTime,
-    premiered = this.premiered,
-    ended = this.ended,
-    rating = this.rating,
+    premieredDate = this.premiered,
+    endedDate = this.ended,
+    rating = this.rating?.average,
     image = this.image?.toDomain(),
     summary = this.summary
 )

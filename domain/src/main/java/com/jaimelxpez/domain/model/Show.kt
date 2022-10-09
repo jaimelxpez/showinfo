@@ -8,8 +8,8 @@ data class Show(
     val genres: List<String?>?,
     val isEnded: Boolean,
     val averageTime: Int?,
-    val premiered: String?,
-    val ended: String?,
+    val premieredDate: String?,
+    val endedDate: String?,
     val rating: Double?,
     val image: Image?,
     val summary: String?
